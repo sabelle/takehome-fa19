@@ -94,7 +94,7 @@ def update_contact(id, name, hobby):
     elif name is not None:
         data = {"name": name}
 
-    #hobby is not None   
+    #hobby is not None      
     else
         data = {"hobby": hobby}
 
