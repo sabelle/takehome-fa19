@@ -14,10 +14,11 @@ class App extends Component {
     }
   }
 
+
   render() {
     return (
       <div className="App">
-        <Instructions />
+        <Instructions complete/>
 
         {this.state.contacts.map(x => (
           <Contact id={x.id} name={x.name} nickcname={x.nickname} hobby={x.hobby} />
