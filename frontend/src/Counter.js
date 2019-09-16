@@ -4,9 +4,9 @@ class Counter extends Component {
   // YOUR CODE GOES BELOW
   constructor(props) {
     super(props);
-    this.state = {count: 0}
+    //this.state = {count: 0}
   }
-  // count = 0;
+  int count = 0;
 
   incrClick = () => {
     //count: this.state.count + this.props.increment,
