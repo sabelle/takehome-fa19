@@ -2,8 +2,14 @@ import React, { Component } from 'react'
 
 class Counter extends Component {
   // YOUR CODE GOES BELOW
-  int count = 0;
+  constructor(props) {
+    super(props);
+    this.state = {count: 0}
+  }
+  // count = 0;
+
   incrClick = () => {
+    //count: this.state.count + this.props.increment,
     count++;
     alert('count has been incremented')
   }
@@ -11,6 +17,7 @@ class Counter extends Component {
     count--;
     alert('count has been decremented')
   }
+
   render() {
     return (
       <div>
